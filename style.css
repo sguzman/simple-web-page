@@ -1,7 +1,37 @@
+#tab1body {
+    display: inline-block;
+    background-color: cyan;
+}
+
 #tab2body {
     display: none;
+    background-color: aliceblue;
+}
+
+#tab1 {
+    width: 48%;
+    padding-right: 0;
+}
+
+#tab2 {
+    width: 48%;
+    padding-left: 0;
 }
 
 header {
+    width: auto;
+    background-color: red;
+    text-align: center;
+}
 
+article {
+    width: auto;
+    background-color: blue;
+    text-align: center;
+}
+
+footer {
+    width: auto;
+    background-color: green;
+    text-align: center;
 }

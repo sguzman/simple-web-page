@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     <title>Test Page</title>
 </head>
@@ -12,17 +13,25 @@
         </header>
         <article>
             <h2>This is the body of the article.</h2>
-            <button id="tab1" onclick="toggleTabs()">Tab 1</button>
-            <button id="tab2" onclick="toggleTabs()">Tab 2</button>
+            <button id="tab1" onclick="displayTab1()">Tab 1</button>
+            <button id="tab2" onclick="displayTab2()">Tab 2</button>
             <div id="body">
-                <div id="tab1body">Tab 1 Body</div>
-                <div id="tab2body">Tab 2 Body</div>
+                <div id="tab1body">
+                    <h3>Tab 1 Body</h3>
+                    <p>Body 1</p>
+                </div>
+                <div id="tab2body">
+                    <h3>Tab 2 Body</h3>
+                    <p>Body 2</p>
+                </div>
             </div>
         </article>
         <footer>
             <p>By Salvador Guzman</p>
         </footer>
     </main>
-    <script type="text/javascript" rel="script" src="./script.js" async></script>
+    <script rel="script" src="./script.js" type="text/javascript">
+        displayTab1()
+    </script>
 </body>
 </html>
